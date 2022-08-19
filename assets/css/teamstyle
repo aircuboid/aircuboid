@@ -1,0 +1,146 @@
+
+.meet-our-team{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	min-height: 100vh;
+}
+
+.team-heading{
+	margin-top: 100px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 30px;
+  	text-transform: capitalize;
+  	color: #2a2a2a;
+  	font-weight: 700;
+  	letter-spacing: 0.25px;
+  	position: relative;
+  	z-index: 2;
+  	line-height: 44px;
+}
+
+.team-heading em{
+	font-style: normal;
+  	color: #03a4ed;
+}
+
+section{
+	position: relative;
+}
+
+section::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #ff3934;
+	clip-path: circle(15% at left 30%);
+}
+
+section::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #ff6551;
+	clip-path: circle(15% at right 70%);
+}
+
+
+.container-team{
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 40px 0;
+}
+
+.container-team .card-team{
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: rgba(255, 255, 255, 0.05);
+	margin: 20px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+}
+
+.container-team .card-team .content-team{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	opacity: 0.8;
+	transition: 0.5s;
+}
+
+.container-team .card-team:hover .content-team{
+	opacity: 1;
+}
+
+.container-team .card-team .content-team .img-team{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 10px solid rgba(0, 0, 0, 0.25);
+}
+
+.container-team .card-team .content-team .img-team img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container-team .card-team .content-team .contentbx-team .team-member-name{
+	color: #000000;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+.container-team .card-team .content-team .contentbx-team .team-member-name .team-member-qul{
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+
+.container-team .card-team .sci-team{
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+}
+
+.container-team .card-team .sci-team .team-list{
+	list-style: none;
+	margin: 0 10px;
+	transform: translateY(40px);
+	transition: 0.5s;
+}
+
+
+.container-team .card-team .sci-team .team-list .team-links{
+	color: rgb(0, 0, 0);
+	font-size: 20px;
+}
