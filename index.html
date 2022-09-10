@@ -29,7 +29,9 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/teamstyle.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/testimonialstyle.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
     <link rel="stylesheet" href="assets/css/animated.css">
@@ -70,7 +72,7 @@
               <li class="scroll-to-section"><a href="#services">Services</a></li>
               <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
               <li class="scroll-to-section"><a href="#our-team">Our Team</a></li> 
-              <!-- <li class="scroll-to-section"><a href="#contact">Message Us</a></li>  -->
+              <li class="scroll-to-section"><a href="#testimonials">Testimonials</a></li> 
               <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Contact Now</a></div></li> 
             </ul>        
             <a class='menu-trigger'>
@@ -299,10 +301,10 @@
 <!-- ***** portfolio section ends ***** -->
 
 <!-- ***** meet out team section starts ***** -->
-<div>
+<div id="our-team">
   <h2 class="team-heading wow bounceIn">Meet <em>Our</em> Team</h2>
 </div>
-  <section class="meet-our-team" id="our-team">
+  <section class="meet-our-team" >
     <div class="container-team">
       <div class="card-team">
         <div class="content-team">
@@ -371,6 +373,69 @@
     </div>
   </section>
 <!-- ***** meet out team section end ***** -->
+
+<!-- ***** testimonial section starts ***** -->
+<div id="testimonials">
+  <h2 class="team-heading wow bounceIn">Testi<em>monials</em></h2>
+</div>
+  <section class="our-testimonials" >
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testimonialBox">
+            <img src="assets/images/quote.png" class="quote">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p>
+              <div class="details">
+                <div class="imgBx">
+                  <img src="assets/images/avtar.jpg">
+                </div>
+                <h3>Ali Sina<br><span>Forkaia</span></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonialBox">
+            <img src="assets/images/quote.png" class="quote">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p>
+              <div class="details">
+                <div class="imgBx">
+                  <img src="assets/images/avtar.jpg">
+                </div>
+                <h3>Ketan Sidhhpara<br><span>ATT Director</span></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonialBox">
+            <img src="assets/images/quote.png" class="quote">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p>
+              <div class="details">
+                <div class="imgBx">
+                  <img src="assets/images/avtar.jpg">
+                </div>
+                <h3>Someone Famous<br><span>Creative Designer</span></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ***** testimonial section ends ***** -->
 
 <!-- ***** contact us section starts ***** -->
   <div id="contact" class="contact-us section">
@@ -448,14 +513,16 @@
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/templatemo-custom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> 
+  <script src="assets/js/testimonial.js"></script>
   <!-- <script type="https://smtpjs.com/v3/smtp.js"></script>
   <script>
     function sendEmail(){
       Email.send({
         Host : "smtp.gmail.com",
-        Username : "username",
+        Username : "mailadd",
         Password : "password",
-        To : '',
+        To : 'com.emailadd',
         From : document.getElementById("email").value,
         Subject : "New Contact or Enquiry",
         Body : "And this is the body"s
