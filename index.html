@@ -29,7 +29,9 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/teamstyle.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/testimonialstyle.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
     <link rel="stylesheet" href="assets/css/animated.css">
@@ -70,7 +72,7 @@
               <li class="scroll-to-section"><a href="#services">Services</a></li>
               <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
               <li class="scroll-to-section"><a href="#our-team">Our Team</a></li> 
-              <!-- <li class="scroll-to-section"><a href="#contact">Message Us</a></li>  -->
+              <li class="scroll-to-section"><a href="#testimonials">Testimonials</a></li> 
               <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Contact Now</a></div></li> 
             </ul>        
             <a class='menu-trigger'>
@@ -299,10 +301,10 @@
 <!-- ***** portfolio section ends ***** -->
 
 <!-- ***** meet out team section starts ***** -->
-<div>
+<div id="our-team">
   <h2 class="team-heading wow bounceIn">Meet <em>Our</em> Team</h2>
 </div>
-  <section class="meet-our-team" id="our-team">
+  <section class="meet-our-team" >
     <div class="container-team">
       <div class="card-team">
         <div class="content-team">
@@ -316,10 +318,10 @@
               <a href="https://hashnode.com/@Aircuboid" target="_blank" class="team-links"><iconify-icon icon="simple-icons:hashnode" style="font-size: 15px;"></iconify-icon></a>
             </li>
             <li style="--i:2" class="team-list">
-              <a href="https://linkdin.com" target="_blank" class="team-links"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/company/aircuboid/" target="_blank" class="team-links"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
             </li>
             <li style="--i:3" class="team-list">
-              <a href="https://github.com" target="_blank" class="team-links"><i class="fa fa-github" aria-hidden="true"></i></i></a>
+              <a href="https://github.com/aircuboid" target="_blank" class="team-links"><i class="fa fa-github" aria-hidden="true"></i></i></a>
             </li>
           </ul>
         </div>
@@ -371,6 +373,63 @@
     </div>
   </section>
 <!-- ***** meet out team section end ***** -->
+
+<!-- ***** testimonial section starts ***** -->
+<div id="testimonials">
+  <h2 class="team-heading wow bounceIn">Testi<em>monials</em></h2>
+</div>
+  <section class="our-testimonials" >
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testimonialBox">
+            <img src="assets/images/quote.png" class="quote">
+            <div class="content">
+              <p>Kuldeep(AirCuboid Executive Advisor) has a massive capacity to harmonize any group of people to complete a task effectively; better than I have seen with almost any other individual in my life. This is not an overstatement. He has strong communication skills and an overall demeanor that is both persuasive, honest, calm and joyful at the same time..</p>
+              <div class="details">
+                <div class="imgBx">
+                  <img src="assets/images/avtar.jpg">
+                </div>
+                <h3>Kevin Hill<br><span>Funguana</span></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonialBox">
+            <img src="assets/images/quote.png" class="quote">
+            <div class="content">
+              <p>There is not enough space to say all the wonderful things I would want to share about AirCuboid. They are incredibly helpful, stay calm even when we had to deal with tough issues on our app, and always found a way to help us fix whatever was needed or roll out any new features for our web app. Their new easy to use standardized coding structure is really helpful to takeover by my team after several iteration. Documentation is cherry on cake.</p>
+              <div class="details">
+                <div class="imgBx">
+                  <img src="assets/images/avtar.jpg">
+                </div>
+                <h3>Robert de Oaola<br><span>Entrepreneur</span></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonialBox">
+            <img src="assets/images/quote.png" class="quote">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p>
+              <div class="details">
+                <div class="imgBx">
+                  <img src="assets/images/avtar.jpg">
+                </div>
+                <h3>Someone Famous<br><span>Creative Designer</span></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ***** testimonial section ends ***** -->
 
 <!-- ***** contact us section starts ***** -->
   <div id="contact" class="contact-us section">
@@ -448,14 +507,16 @@
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/templatemo-custom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> 
+  <script src="assets/js/testimonial.js"></script>
   <!-- <script type="https://smtpjs.com/v3/smtp.js"></script>
   <script>
     function sendEmail(){
       Email.send({
         Host : "smtp.gmail.com",
-        Username : "username",
+        Username : "mailadd",
         Password : "password",
-        To : '',
+        To : 'com.emailadd',
         From : document.getElementById("email").value,
         Subject : "New Contact or Enquiry",
         Body : "And this is the body"s
