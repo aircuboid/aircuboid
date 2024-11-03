@@ -5,8 +5,8 @@ import { Manrope } from 'next/font/google';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Next.js SaaS Starter',
-  description: 'Get started quickly with Next.js, Postgres, and Stripe.',
+  title: 'MarkAIt - AI Crowd',
+  description: 'Get your AI Crowd',
 };
 
 export const viewport: Viewport = {
