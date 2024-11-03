@@ -18,8 +18,7 @@ export default function HomePage() {
               </p>
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                 <a
-                  href="https://markait.com/marketplace"
-                  target="_blank"
+                  href="/marketplace"
                 >
                   <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-full text-lg px-8 py-4 inline-flex items-center justify-center">
                     Browse Agents
