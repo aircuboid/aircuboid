@@ -87,7 +87,7 @@ function PricingCard({
       </ul>
       <form action={checkoutAction}>
         <input type="hidden" name="priceId" value={priceId} />
-        <SubmitButton className='bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 hover:from-blue-500 hover:to-purple-600 text-white px-6 py-3 rounded-full' />
+        <SubmitButton />
       </form>
     </div>
   );
