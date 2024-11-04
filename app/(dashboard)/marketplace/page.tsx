@@ -1,7 +1,9 @@
-import { Star } from 'lucide-react';
-import { getAgents } from '@/lib/agents';
+'use client';
 
-export const revalidate = 3600;
+import { getAgents } from '@/lib/agents';
+import { useUser } from '@/lib/auth';
+import { Star } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 export default async function MarketplacePage() {
   const agents = await getAgents();
@@ -21,6 +23,17 @@ export default async function MarketplacePage() {
 }
 
 function AgentCard({ agent }: { agent: { id: string; name: string; description: string; price: number; rating: number; } }) {
+  const router = useRouter();
+  const { user } = useUser(); // Get user status from context
+
+  const handleGetAgent = () => {
+    if (!user) {
+      router.push('/sign-in');
+    } else {
+      router.push(`/marketplace/agent/${agent.id}`);
+    }
+  };
+
   return (
     <div className="p-4 bg-gradient-to-b from-gray-700 to-gray-800 rounded-md shadow-md">
       <h2 className="text-2xl font-bold text-white mb-2">{agent.name}</h2>
@@ -33,8 +46,10 @@ function AgentCard({ agent }: { agent: { id: string; name: string; description: 
         <Star className="h-6 w-6 text-yellow-400 mr-2" />
         <span className="text-gray-300">{agent.rating} / 5</span>
       </div>
-      <button className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 hover:from-blue-500 hover:to-purple-600 text-white px-4 py-2 rounded-md inline-flex items-center">
-        
+      <button
+        onClick={handleGetAgent}
+        className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 hover:from-blue-500 hover:to-purple-600 text-white px-4 py-2 rounded-md inline-flex items-center"
+      >
         Get Agent
       </button>
     </div>
